@@ -6,16 +6,20 @@
 ### Middleware - authorization
 ### Swagger - documentation
 ### Log - api log
+### Database seed - admin user
 
 ## Postman Collection
 https://www.getpostman.com/collections/74dfad2a0f3372575dfb
 
-## Database seed for Admin User Seed
-run following command:
+## Start
+git clone https://github.com/zahidcserana/laravel-project.git
+composer install
+php artisan migrate
 php artisan db:seed
 
- Email: admin@admin.com
- password: 123456
+### Login credential
+Email: admin@admin.com
+password: 123456
 
 ## Api Documentation - Swagger
 documentation url:
