@@ -23,6 +23,8 @@ php artisan migrate
 
 php artisan db:seed
 
+php artisan passport:install
+
 ### Login credential
 Email: admin@admin.com
 password: 123456
