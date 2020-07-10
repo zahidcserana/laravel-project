@@ -1,10 +1,10 @@
 # Laravel Project Api
 
-## Passport
-## Gate
-## Middleware
-## Swagger
-## Log
+### Passport - authentication
+## Gate - permission
+## Middleware - authorization
+## Swagger - documentation
+## Log - api log
 
 ## Postman Collection
 https://www.getpostman.com/collections/74dfad2a0f3372575dfb
