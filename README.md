@@ -12,3 +12,5 @@ php artisan db:seed
 ## Api Documentation - Swagger
 documentation url:
 http://127.0.0.1:8000/api/documentation
+
+## Log For Api in api.log File
