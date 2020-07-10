@@ -4,14 +4,20 @@ namespace App\Http\Controllers\Api;
 
 use App\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
+use App\Http\Resources\ProjectResource;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Api\BaseController;
-use App\Http\Resources\ProjectResource;
 
 class ProjectController extends BaseController
 {
+    public function __construct(Request $request)
+    {
+        $uri = $request->path();
+        Log::channel('api')->info($uri);
+    }
     /**
      * @OA\Post(
      *      path="/projects",

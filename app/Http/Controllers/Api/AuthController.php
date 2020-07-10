@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use App\Http\Resources\UserResource;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
@@ -12,8 +13,11 @@ use App\Http\Controllers\Api\BaseController;
 
 class AuthController extends BaseController
 {
-    public function __construct()
+    public function __construct(Request $request)
     {
+        $uri = $request->path();
+        Log::channel('api')->info($uri);
+
         $this->middleware('admin', ['only' => [
             'store',
             'destroy',
