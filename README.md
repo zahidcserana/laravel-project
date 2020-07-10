@@ -15,6 +15,8 @@ https://www.getpostman.com/collections/74dfad2a0f3372575dfb
 
 git clone https://github.com/zahidcserana/laravel-project.git
 
+##### change .env.example to .env
+
 composer install
 
 php artisan migrate
