@@ -12,9 +12,13 @@
 https://www.getpostman.com/collections/74dfad2a0f3372575dfb
 
 ## Start
+
 git clone https://github.com/zahidcserana/laravel-project.git
+
 composer install
+
 php artisan migrate
+
 php artisan db:seed
 
 ### Login credential
