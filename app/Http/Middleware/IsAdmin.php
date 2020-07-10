@@ -19,7 +19,12 @@ class IsAdmin
         if (Auth::user() &&  Auth::user()->is_admin == 1) {
             return $next($request);
         }
+        $response = [
+            'status' => false,
+            'data'    => [],
+            'message' => 'Forbidden',
+        ];
 
-        return response()->json(['success' => false,'data'=>[], 'message' => 'Access Forbidden!']);
+        return response()->json($response, 403);
     }
 }
