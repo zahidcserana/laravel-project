@@ -14,10 +14,10 @@ class Controller extends BaseController
     /**
      * @OA\Info(
      *      version="1.0.0",
-     *      title="Laravel OpenApi Demo Documentation",
-     *      description="L5 Swagger OpenApi description",
+     *      title="Laravel Project Documentation",
+     *      description="Api description",
      *      @OA\Contact(
-     *          email="admin@admin.com"
+     *          email="zahid1004048@gmail.com"
      *      ),
      *      @OA\License(
      *          name="Apache 2.0",
